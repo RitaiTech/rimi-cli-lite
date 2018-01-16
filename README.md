@@ -6,10 +6,19 @@ This is a light weight java command line console.
 
 Run application by Java.
 
-	java -jar console.jar
+	java -jar rimi-cli-lite.jar
 	
 Type `help' to see the list of all available commands.
 
-	help
+	
+	console \> help
+	
+	Available commands : 
+	
+	exec                 Run a system command or shell script
+	exit                 Exit the shell.
+	log                  The command of tracing application loggings
+	
+	console \> 	
 	
 
