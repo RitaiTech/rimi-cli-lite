@@ -1,0 +1,4 @@
+
+Usage : exit
+
+Exit the shell.

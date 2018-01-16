@@ -1,0 +1,9 @@
+
+Usage : log [command] [options]
+
+Type `log' to see this list.
+
+log set                             Configure the general settings of log commands
+log snap  name [description]        Create or replace a named snapshot of current log status
+log diff  name [name]               Export the difference between two named snapshots
+log trace keyword                   Find the traces in the multiple logs, try to find the calling chains
