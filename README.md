@@ -96,8 +96,5 @@ e.g.
 META-INF/shell/docs/help_zh_CN.txt
 ```
 
-## Contact us
-
-You can contact us by this mail 3099297918@qq.com if you need more supporting.
 
  
