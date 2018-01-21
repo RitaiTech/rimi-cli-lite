@@ -65,7 +65,7 @@ console >
 
 ## Develop Guideline  
 
-** Custom ComponentScan **
+**Custom ComponentScan**
 
 The console application scans the package `rimi.ritsai.cli` default.   
 You can also scan your own package by creating a configuration class under that package.
@@ -109,7 +109,7 @@ If you want to provide a version for your locale language. You need to create a 
 
 e.g.
 ```Bash
-META-INF/shell/docs/help\_zh\_CN.txt
+META-INF/shell/docs/help_zh_CN.txt
 ```
 
 ## Contact us
