@@ -8,6 +8,7 @@ We are trying to provide a simple command prompt interface with the following fe
 * Easy to create your own commands and use them.
 * Minimize configuration
 * Less dependency
+* Mutiple Language supporting
 
 
 ## System Requirement
@@ -79,7 +80,8 @@ public class MyConfig {
 	
 }
 ```
-** Create your own command **
+
+**Create your own command**
 
 To create your own command, you just need to implement the interface `ConsoleCommand` and mark it with `@Command` annotation.
 
@@ -93,7 +95,7 @@ public class LogDiff implements ConsoleCommand {
 }
 ```
 
-** Document your command **
+**Document your command**
 
 The console loads your command document by this pattern `META-INF/shell/docs/{CommandName}.txt`.  
 The `CommandName` is the value of defined in the `@Command` annotation.
