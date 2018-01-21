@@ -1,10 +1,23 @@
-RIMI-CLI-LITE
+Overview
 ===========================
-**RIMI-CLI-LITE** is a light weight pure java command line console.
-It provides a very simple command prompt interface to use.
-It is easy to create your own commands and use them.
 
-*   The JRE flavor requires JDK 1.8 or higher.
+**RIMI-CLI-LITE** is a light weight pure java command line console.
+
+We are trying to provide a simple command prompt interface with the following features.
+
+* Easy to create your own commands and use them.
+* Minimize configuration
+* Less dependency
+
+
+## System Requirement
+
+* The JRE flavor requires JDK 1.8 or higher.
+
+## Dependency
+
+* org.springframework:spring-context:4.3.12.RELEASE
+* org.assertj:assertj-core:2.6.0
 
 ## Quick Start
 
@@ -51,21 +64,23 @@ console >
 
 ## Develop Guideline
 
-### Custom ComponentScan
+** Custom ComponentScan **
 
-The console application scans the package **rimi.ritsai.cli** default. 
+The console application scans the package `rimi.ritsai.cli` default.   
 You can also scan your own package by creating a configuration class under that package.
 
 ```Java
+package rimi.ritsai.cli;
+
 @Configuration
 @ComponentScan(basePackages = { "example.mypackage" })
 public class MyConfig {
 	
 }
 ```
-### Create your own command.
+** Create your own command **
 
-To create your own command, you just need to implement the interface **ConsoleCommand** and mark it with **@Command** annotation.
+To create your own command, you just need to implement the interface `ConsoleCommand` and mark it with `@Command` annotation.
 
 ```	Java
 @Command(name = "log diff", group = "log", usage = "log diff stageA [stageB]", description = "Compare the two stages and export the difference")
@@ -77,10 +92,10 @@ public class LogDiff implements ConsoleCommand {
 }
 ```
 
-### Provide help information for your command.
+** Document your command **
 
-The console loads your command document by this pattern **META-INF/shell/docs/{CommandName}.txt**.
-The **CommandName** is the value of defined in the  **@Command** annotation.
+The console loads your command document by this pattern `META-INF/shell/docs/{CommandName}.txt`.  
+The `CommandName` is the value of defined in the `@Command` annotation.
 
 e.g.
 ```Bash
@@ -93,8 +108,16 @@ If you want to provide a version for your locale language. You need to create a 
 
 e.g.
 ```Bash
-META-INF/shell/docs/help_zh_CN.txt
+META-INF/shell/docs/help\_zh\_CN.txt
 ```
 
+## Contact us
 
- 
+You can contact us by this mail ritsai@qq.com if you need more.
+
+## Project License
+
+
+The Apache Software License, Version 2.0.
+
+For more information, see [license](LICENSE).
