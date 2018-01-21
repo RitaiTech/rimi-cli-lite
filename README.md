@@ -62,6 +62,7 @@ log diff  name [name]               Export the difference between two named snap
 console > 	
 ```
 
+
 ## Develop Guideline
 
 ** Custom ComponentScan **
@@ -108,7 +109,7 @@ If you want to provide a version for your locale language. You need to create a 
 
 e.g.
 ```Bash
-META-INF/shell/docs/help_zh_CN.txt
+META-INF/shell/docs/help\_zh\_CN.txt
 ```
 
 ## Contact us
